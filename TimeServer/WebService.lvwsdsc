@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WebService Name="TimeServer" Version="1.0" xmlns="http://www.ni.com/LVWebServiceDescription.xsd">
+<Responses>
+<Response Name="" Format="XML" Mode="Terminal">
+<Output Name="year" Type="Long"/>
+<Output Name="month" Type="Long"/>
+<Output Name="day" Type="Long"/>
+<Output Name="hour" Type="Long"/>
+<Output Name="minute" Type="Long"/>
+<Output Name="second" Type="Long"/>
+<Output Name="fractional second" Type="Double"/>
+</Response>
+</Responses>
+<Methods>
+<WebMethod Name="/currentTime" HTTPMethodType="GET" RequireAPIKey="False" Response=""/>
+</Methods>
+</WebService>

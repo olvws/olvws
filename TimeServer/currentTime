@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Response>
+<Terminal><Name>year</Name><Value>2012</Value></Terminal>
+<Terminal><Name>month</Name><Value>10</Value></Terminal>
+<Terminal><Name>day</Name><Value>16</Value></Terminal>
+<Terminal><Name>hour</Name><Value>20</Value></Terminal>
+<Terminal><Name>minute</Name><Value>03</Value></Terminal>
+<Terminal><Name>second</Name><Value>14</Value></Terminal>
+<Terminal><Name>fractional second</Name><Value>0.000</Value></Terminal>
+</Response>
