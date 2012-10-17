@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <UserServices>
+<WSName>.DS_Store</WSName>
+<WSName>.git</WSName>
 <WSName>TimeServer</WSName>
 </UserServices>
