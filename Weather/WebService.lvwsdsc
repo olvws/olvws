@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WebService Name="Weather" Version="1.0" xmlns="">
+<Responses>
+<Response Name="" Format="XML" Mode="Terminal">
+<Output Name="temp" Type="Long"/>
+</Response>
+</Responses>
+<Methods>
+<WebMethod Name="/currentTemp" HTTPMethodType="GET" RequireAPIKey="False" Response=""/>
+</Methods>
+</WebService>
