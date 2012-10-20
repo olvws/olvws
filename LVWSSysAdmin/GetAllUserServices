@@ -3,4 +3,5 @@
 <WSName>.DS_Store</WSName>
 <WSName>.git</WSName>
 <WSName>TimeServer</WSName>
+<WSName>Weather</WSName>
 </UserServices>

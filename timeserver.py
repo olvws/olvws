@@ -1,22 +1,17 @@
-import time
+import time, wsutils
 from time import strftime
 
-standard_service_header = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<Response>\n"
-terminal_begin = "<Terminal><Name>"
-terminal_middle = "</Name><Value>"
-terminal_end = "</Value></Terminal>\n"
-standard_service_footer = "</Response>"
 def current_time():
 	current_time = time.localtime()
-	updated_html = standard_service_header
-	updated_html = updated_html+terminal_begin+"year"+terminal_middle+strftime("%Y", current_time)+terminal_end
-	updated_html = updated_html+terminal_begin+"month"+terminal_middle+strftime("%m", current_time)+terminal_end
-	updated_html = updated_html+terminal_begin+"day"+terminal_middle+strftime("%d", current_time)+terminal_end
-	updated_html = updated_html+terminal_begin+"hour"+terminal_middle+strftime("%H", current_time)+terminal_end
-	updated_html = updated_html+terminal_begin+"minute"+terminal_middle+strftime("%M", current_time)+terminal_end
-	updated_html = updated_html+terminal_begin+"second"+terminal_middle+strftime("%S", current_time)+terminal_end
-	updated_html = updated_html+terminal_begin+"fractional second"+terminal_middle+"0.000"+terminal_end
-	updated_html = updated_html+standard_service_footer
+	updated_html = wsutils.standard_service_header
+	updated_html = updated_html+wsutils.terminal_begin+"year"+wsutils.terminal_middle+strftime("%Y", current_time)+wsutils.terminal_end
+	updated_html = updated_html+wsutils.terminal_begin+"month"+wsutils.terminal_middle+strftime("%m", current_time)+wsutils.terminal_end
+	updated_html = updated_html+wsutils.terminal_begin+"day"+wsutils.terminal_middle+strftime("%d", current_time)+wsutils.terminal_end
+	updated_html = updated_html+wsutils.terminal_begin+"hour"+wsutils.terminal_middle+strftime("%H", current_time)+wsutils.terminal_end
+	updated_html = updated_html+wsutils.terminal_begin+"minute"+wsutils.terminal_middle+strftime("%M", current_time)+wsutils.terminal_end
+	updated_html = updated_html+wsutils.terminal_begin+"second"+wsutils.terminal_middle+strftime("%S", current_time)+wsutils.terminal_end
+	updated_html = updated_html+wsutils.terminal_begin+"fractional second"+wsutils.terminal_middle+"0.000"+wsutils.terminal_end
+	updated_html = updated_html+wsutils.standard_service_footer
 	f = open("./TimeServer/currentTime", "w")
 	f.write(updated_html)
 	f.close()

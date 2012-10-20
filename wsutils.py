@@ -1,6 +1,12 @@
 import os
 
-infrastructure_files = ['LVWSSysAdmin', 'server.py', 'timeserver.py', 'timeserver.pyc', 'wsutils.py', 'wsutils.pyc']
+standard_service_header = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<Response>\n"
+terminal_begin = "<Terminal><Name>"
+terminal_middle = "</Name><Value>"
+terminal_end = "</Value></Terminal>\n"
+standard_service_footer = "</Response>"
+
+infrastructure_files = ['LVWSSysAdmin', 'server.py', 'timeserver.py', 'timeserver.pyc', 'weather.py', 'weather.pyc', 'wsutils.py', 'wsutils.pyc']
 global_services_header = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<UserServices>\n"
 global_services_footer = "</UserServices>"
 def generate_user_services_file():

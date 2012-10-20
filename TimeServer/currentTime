@@ -2,9 +2,9 @@
 <Response>
 <Terminal><Name>year</Name><Value>2012</Value></Terminal>
 <Terminal><Name>month</Name><Value>10</Value></Terminal>
-<Terminal><Name>day</Name><Value>17</Value></Terminal>
-<Terminal><Name>hour</Name><Value>00</Value></Terminal>
-<Terminal><Name>minute</Name><Value>03</Value></Terminal>
-<Terminal><Name>second</Name><Value>15</Value></Terminal>
+<Terminal><Name>day</Name><Value>19</Value></Terminal>
+<Terminal><Name>hour</Name><Value>23</Value></Terminal>
+<Terminal><Name>minute</Name><Value>00</Value></Terminal>
+<Terminal><Name>second</Name><Value>36</Value></Terminal>
 <Terminal><Name>fractional second</Name><Value>0.000</Value></Terminal>
 </Response>
