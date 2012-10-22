@@ -6,6 +6,8 @@
 </Response>
 </Responses>
 <Methods>
-<WebMethod Name="/currentTemp" HTTPMethodType="GET" RequireAPIKey="False" Response=""/>
+<WebMethod Name="/currentTemp/:woeid" HTTPMethodType="GET" RequireAPIKey="False" Response="">
+<Input Name="woeid" Type="Long"/>
+</WebMethod>
 </Methods>
 </WebService>

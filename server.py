@@ -6,7 +6,10 @@ class Handler(SimpleHTTPServer.SimpleHTTPRequestHandler):
 	if "/TimeServer/currentTime" in self.path: 
 		timeserver.current_time()
 	if "/Weather/currentTemp" in self.path:
-		weather.current_temp()
+		try:
+			weather.current_temp(self.path[self.path.index('?')+1:])
+		except ValueError:
+			weather.current_temp_default()
                 
         return SimpleHTTPServer.SimpleHTTPRequestHandler.do_GET(self)
 
